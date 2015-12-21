@@ -75,6 +75,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="PundTillKronor.html" />
+    <Content Include="Scritp\PundTillKronor.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
