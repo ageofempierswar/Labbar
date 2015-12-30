@@ -8,9 +8,9 @@ var berakningKR = calculatePundSvar(pund, kronor);
 document.getElementById('dollarSvar').innerHTML = berakning;
 
 function calculatePundSvar(pund) {
-    return pund * 6 ;
+    return pund * 12 ;
 }
 
-function calculatePundSvar(pund, kronor) {
-    return dollar * 12;
+function calculatePundSvar(dollar) {
+    return dollar * 6;
 }
