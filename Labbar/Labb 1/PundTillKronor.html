@@ -5,18 +5,52 @@
 	<meta charset="utf-8" />
 </head>
 <body>
-    <p>Hur många kronor vil du växla till pund</p>
-    <input type="text" id="Pund"/>
+    <!-- del 1 -->
+    <h1>del 1 : Kronor till Pund/Dollar </h1>
+    <fieldset>
+        <legend>del 1</legend>
+        <p>
+            Svenska Kronor:<input id="inputSek" />
+        </p>
+        <p>Du får <span id="pund"></span> Pund</p>
+        <p>Du får <span id="dollar"></span> Pund</p>
+        <button id="ConvertCurrencyButton">Convert</button>
+    </fieldset>
 
-    <p>Hur många kronor vil du växla till dollar</p>
-    <input type="text" id="dollar" />
-    <button id="ConvertCurrencyButton">Convert</button>
+    <!-- del 2 -->
+    <h1>del 2 : Lön</h1>
+    <h2>Lön</h2>
+    <input type="number" id="försäljningssumman" placeholder="Försäljning" />
+    <p>
+        Grundlön: <span id="brutto">15000</span> kr
+    </p>
+    <p>Din lön är: <span id="lön">Klicka här för att se din lön</span></p>
+    <hr />
 
 
-    <p>Du får <span id="PundSvar">Svar</span>Pund</p>
+    <!-- del 3 -->
+    <h1>del 3: Tid </h1>
+    <fieldset>
+        <legend>del 3</legend>
+        <p>
+            Enter Hour(s):<input id="Hours" />
+        </p>
+        <p>Minutes: <span id="minutes"></span></p>
+        <p>Seconds: <span id="seconds"></span></p>
+        <button id="calculateTimeButton">calculate Time</button>
+    </fieldset>
 
 
-    <p>Du får <span id="dollarSvar">Svar</span>dollar</p>
-    
+    <!-- del 4 -->
+    <h1>del 4 : Pris</h1>
+    <p>Pris: <input type="number" id="pris" placeholder="Pris" /></p>
+    <p>Att betala: <span id="att_betala">Klicka här för att se summan</span></p>
+    <div id="ett"></div>
+    <hr />
+    <!-- del 5 -->
+    <h1>del 5 gångor </h1>
+    <h2>Skriv in ett tal</h2>
+    <p><input type="number" id="tal" placeholder="Tal" /> x * 3 +7 = <span id="summa2">Klicak här för att se svaret</span></p>
+    <hr />
 </body>
 </html>
