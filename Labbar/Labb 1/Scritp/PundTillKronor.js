@@ -1,16 +1,12 @@
-﻿var pund = document.getElementById('Pund');
-var dollar = document.getElementById('dollar');
+﻿var ConvertCurrencyButton = document.getElementById('ConvertCurrencyButton');
+function ConvertCurrencyFromSekToDollarAndPund() {
 
-var berakningPund = calculatePundSvar(pund);
-document.getElementById('PundSvar').innerHTML = berakning;
 
-var berakningKR = calculatePundSvar(pund, kronor);
-document.getElementById('dollarSvar').innerHTML = berakning;
+var sek = document.getElementById('inputSek').value;
+var pund = Number(sek) * Number(12);
+var dollar = Number(sek) * Number(6);
 
-function calculatePundSvar(pund) {
-    return pund * 12 ;
+document.getElementById('Pund');
+document.getElementById('dollar');
 }
-
-function calculatePundSvar(dollar) {
-    return dollar * 6;
-}
+ConvertCurrencyButton.addEventListener('click', ConvertCurrencyFromSekToDollarAndPund, false);
