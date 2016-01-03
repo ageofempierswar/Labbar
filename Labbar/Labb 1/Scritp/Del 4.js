@@ -7,7 +7,11 @@ function skrivUtSumman() {
 
 function räknaUtSumman(pris) {
     if (pris >= 1000)
+    {
         return pris * 0.90;
+    }
     else
+    {
         return pris;
+    }
 }
