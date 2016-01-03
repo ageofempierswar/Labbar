@@ -76,6 +76,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="PundTillKronor.html" />
+    <Content Include="Scritp\Del 2.js" />
+    <Content Include="Scritp\Del 3.js" />
+    <Content Include="Scritp\Del 4.js" />
+    <Content Include="Scritp\Del 5.js" />
     <Content Include="Scritp\PundTillKronor.js" />
     <Content Include="Web.config" />
   </ItemGroup>
