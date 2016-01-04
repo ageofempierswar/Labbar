@@ -1,10 +1,26 @@
 ﻿//happy hour logic:
+var prices = document.getElementsByClassName("price");
 
+var date = new Date().getHours();
+
+function happyHourPrice() {
+    if (date >= 17 && date <= 19) {
+        for (var i = 0; i < prices.length; i++) {
+            var price = Number(prices[i].innerHTML);
+            var newPrice = price * 0.7;
+            prices[i].innerHTML = adjustPrice(newPrice);
+        }
+    }
+}
 //Method calls:
-
+happyHourPrice();
+addBurgerImages();
+todaysOffer();
 
 //Adjust price function: (add .toFixed(2) for 2 decimals)
-
+function adjustPrice(price) {
+    return price.toFixed(2);
+}
 /*Add pictures function to span:*/
 
 /*Add todays offer function. 
