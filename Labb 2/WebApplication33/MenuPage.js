@@ -1,4 +1,5 @@
 ﻿//happy hour logic:
+
 var prices = document.getElementsByClassName("price");
 
 var date = new Date().getHours();
@@ -13,20 +14,55 @@ function happyHourPrice() {
     }
 }
 //Method calls:
+
 happyHourPrice();
 addBurgerImages();
 todaysOffer();
 
 //Adjust price function: (add .toFixed(2) for 2 decimals)
+
 function adjustPrice(price) {
     return price.toFixed(2);
 }
 /*Add pictures function to span:*/
 
+function addBurgerImages() {
+    var spanElements = document.getElementsByTagName("span");
+    console.log(spanElements);
+    for (var i = 0; i < spanElements.length; i++) {
+        var element = document.createElement("img");
+        element.setAttribute("src", "Images/Hamburger.png");
+        spanElements[i].innerHTML = "";
+        spanElements[i].appendChild(element);
+    }
+}
 /*Add todays offer function. 
 Make price background red. 
 Reduce price by another 20%:*/
 
+function todaysOffer() {
+    var daysOfTheWeek = [
+        "sunday",
+        "monday",
+        "tuseday",
+        "wednesday",
+        "thursday",
+        "friday",
+        "saturday"
+    ];
+
+    var currentDay = new Date().getDay();
+
+    for (var i = 0; i < daysOfTheWeek.length; i++) {
+        if (i === currentDay) {
+            var element = document.getElementById(daysOfTheWeek[i]);
+            element.style.backgroundColor = "red";
+            var price = element.innerHTML;
+            var newPrice = price * 0.80;
+            element.innerHTML = adjustPrice(newPrice);
+        }
+    }
+}
 /*Stretch exercises: (increasing tuffness for each number!)
 
  1. Automate todays offer to be dependent of the day of the week
