@@ -124,13 +124,70 @@ function playWithStringMethodsAndProperties() {
 //### String objects page 132: ###
 /*9. check if the 4th element in the array is a number*/
 
+addDiv("Check if 4th element in array is a number", checkIsNumber);
+
+function checkIsNumber() {
+    if (isNaN(array[4])) {
+        alert(array[4] + "Inget nummer");
+    } else {
+        alert(Number(array[4]) + " Jag är ett nummer");
+    };
+}
+
+
 //### Math page 134: ###
 /*10. Round one of the numbers in the paragraph up/down*/
+
+addDiv("Round number in paragraph", roundNumber);
+
+function roundNumber() {
+    alert(array[4] + "--> " + Math.round(array[4]));
+}
+
+
+
 /*11. replace the 3rd word with PI then roud it to the nearest integer*/
+
+addDiv("Replace 3rd word with PI and round it to integer", replace3rd);
+
+function replace3rd() {
+    alert(array[2] + "--> " + Math.PI + "-->" + Math.round(Math.PI));
+}
+
+
 
 //### Date object###
 /*12. Calculate how many days it's until your birthday and present it.*/
+
+addDiv("Days until my birthday", daysUntilBirthday);
+
+function daysUntilBirthday() {
+
+    var birthday = document.getElementById("birthdayPresentation");
+    var oneDay = 24 * 60 * 60 * 1000;
+    var today = new Date();
+    var year = today.getFullYear();
+    var date = new Date(year, 11, 04);
+    if (today > date) {
+        date = new Date((Number(year + 1)), 11, 4);
+    }
+    var untilMyBirthday = Math.round(Math.abs((today.getTime() - date.getTime()) / (oneDay)));
+    birthday.innerHTML = "Days until my birthday: " + untilMyBirthday;
+}
+
 /*13. Calculate how many minutes old you are and present it.*/
+
+addDiv("How many minutes old?", minutesOld);
+
+function minutesOld() {
+    var ageInMinutes = document.getElementById("birthdayPresentation");
+    var minutesPerYear = (24 * 60) * 365;
+    var date = new Date(1994, 12, 04).getFullYear();
+    var today = new Date().getFullYear();
+    var myAgeInMinutes = (today - date) * minutesPerYear;
+    ageInMinutes.innerHTML = "Min ålder i minuter (ungefär): " + myAgeInMinutes;
+}
+
 
 //Bonus exercises:
 //### Demo page 141:###
