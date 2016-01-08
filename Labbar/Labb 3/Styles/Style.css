@@ -31,8 +31,9 @@ body {
 }
 
 #searchResults {
-    margin: 0 auto;
-    width: 50%;
+
+    margin:5px auto;
+    width:50%;
 }
 
 .resultList {
@@ -42,6 +43,7 @@ body {
 }
 
     .resultList li {
+
         width: 100%;
         padding: 20px 20px;
         font-weight: bold;
@@ -57,3 +59,58 @@ body {
         -webkit-animation: smoothTransition 1s;
         animation: smoothTransition 1s;
     }
+    h2 {
+    margin-top: 10px;
+}
+
+#searchResults li:hover {
+    height: 250px;
+    min-height: 100px;
+    overflow: visible;
+}
+
+    #searchResults li:hover img {
+        height: 200px;
+        width: 150px;
+    }
+
+#searchResults img {
+    float: left;
+    width: 80px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+#checkbox_area {
+    text-transform: uppercase;
+    height: 100px;
+}
+@-moz-keyframes smoothTransition {
+    0% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 0.8;
+    }
+}
+
+@-webkit-keyframes smoothTransition {
+    0% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 0.8;
+    }
+}
+
+@keyframes smoothTransition {
+    0% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 0.8;
+    }
+}
