@@ -1,2 +1,59 @@
-﻿body {
+﻿html {
+    height: 100%;
 }
+
+body {
+    background-image: url(../Images/mass-effect-2-16685-1920x1080.jpg);
+    background-size:cover;
+}
+
+#liveSearch {
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px 10px 10px 10px;
+    width: 70%;
+    height: 100px;
+    background-color: hsla(6, 45%, 88%,0.6);
+}
+
+#searchLabel {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    display: block;
+    margin: 10px 0 10px 0;
+}
+
+#search_input {
+    width: 20%;
+    display: block;
+    margin: 0 auto;
+}
+
+#searchResults {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.resultList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+    .resultList li {
+        width: 100%;
+        padding: 20px 20px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+        background-color: hsla(6, 45%, 88%,0.6);
+        padding-bottom: 10px;
+        height: 100px;
+        overflow: hidden;
+        border-bottom: 1px solid gray;
+        -moz-animation: smoothTransition 1s;
+        -o-animation: smoothTransition 1s;
+        -webkit-animation: smoothTransition 1s;
+        animation: smoothTransition 1s;
+    }
